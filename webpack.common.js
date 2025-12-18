@@ -1,24 +1,25 @@
-// webpack.config.js
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-  mode: "development",
+  // 1. نقطة البداية (ثابتة في الحالتين)
   entry: "./src/index.js",
+
+  // 2. المخرجات الأساسية (المكان واسم الملف)
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  devtool: "eval-source-map",
-  devServer: {
-    watchFiles: ["./src/template.html"],
-  },
+
+  // 3. الإضافات الأساسية (إنشاء ملف HTML)
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
     }),
   ],
+
+  // 4. القواعد (كيفية التعامل مع الملفات المختلفة)
   module: {
     rules: [
       {
