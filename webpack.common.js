@@ -1,5 +1,5 @@
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   // 1. نقطة البداية (ثابتة في الحالتين)
@@ -36,4 +36,4 @@ module.exports = {
       },
     ],
   },
-}
+};
