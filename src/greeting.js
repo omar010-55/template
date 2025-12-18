@@ -1,2 +1,2 @@
 // greeting.js
-export const greeting = "Hello, Odinite! and gg"
+export const greeting = "Hello, Odinite! and GGs"
